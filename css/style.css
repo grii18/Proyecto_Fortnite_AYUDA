@@ -1,0 +1,91 @@
+/*Barra de navegación*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.navegacion{
+    width: 100%;
+    margin: 1px auto;
+    background: #333;
+    max-width: 100%;
+}
+.navegacion ul{
+    list-style: none;
+}
+.menu > li{
+    position: relative;
+    display: inline-block;
+}
+.menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    font-family: 'Open sans';
+    text-decoration: none;
+    text-align: center;
+    
+}
+.menu li a:hover{
+    color:blueviolet;
+    transition: all .5s;
+}
+nav > ul li a{
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition:all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+/*Iconos de la barra de menu*/ 
+nav > ul > li > a span{
+    background: #fff;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: -55px;
+      
+} 
+nav > ul > li > a span i{
+    display: block;
+    line-height: 50px;
+    padding-top: 16px;
+}
+nav > ul > li > a:hover > span{
+    top:0;
+}
+/*seccion de los sub_menus*/
+
+.sub_menu{
+    position: absolute;
+    background: #353535;
+    width: 100%;
+    visibility:hidden;
+    opacity: 0;
+    transition: opacity 0.9s;
+}
+.sub_menu li a{
+    display: block;
+    padding:15px 10px;
+    color: #fff;
+    font-family: 'Open sans';
+    text-decoration: none;
+    text-align: center;
+}
+.menu li:hover .sub_menu{
+    visibility:visible;
+    opacity: 1;
+}
+li{
+    list-style: none;
+}
+.contacto {
+    
+    float: right;
+}
+/*Fin de la barra*/
+
