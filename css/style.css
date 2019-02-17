@@ -1,10 +1,13 @@
+.carrusel{
+    height: 600px;
+}
+
 /*Barra de navegación*/
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
 }
 .navegacion{
     width: 100%;
@@ -89,3 +92,170 @@ li{
 }
 /*Fin de la barra*/
 
+/* --------------------------------------------------------------------------------------- */
+
+/* Gri */
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+    
+}
+
+.sinEspacio{
+    margin: 0;
+}
+
+header{
+    width: 100%;
+}
+
+.logo{
+    width: 80px;
+    margin: 0 60px;
+}
+
+
+nav{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+div.cajaLogo{
+    display: inline-block;
+}
+
+.menuNavegacion{
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+    background: #fff;
+    max-width: 100%;
+    background-color: #333;
+}
+.menuNavegacion ul{
+    list-style: none;
+}
+.barraMenu{
+    display: inline-block;
+}
+
+.barraMenu > li{
+    position: relative;
+    display: inline-block;
+}
+.barraMenu > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: #ffffff;
+    font-family: 'Open sans';
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    
+}
+.barraMenu li a:hover{
+    color:blueviolet;
+    transition: all .5s;
+}
+nav.menuNavegacion > ul li a{
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition:all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+/*Iconos de la barra de menu*/
+nav.menuNavegacion > ul > li > a span{
+    background: #353535;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: -55px;
+      
+} 
+nav.menuNavegacion > ul > li > a span i{
+    display: block;
+    line-height: 50px;
+    padding-top: 16px;
+    color: #353535;
+}
+nav.menuNavegacion > ul > li > a:hover > span{
+    top: -25%;
+}
+
+nav.menuNavegacion > ul > li > a:hover > span i{
+    color:blueviolet;
+    padding-bottom: 500px; 
+}
+.barraMenu li{
+    list-style: none;
+}
+
+/* footer */
+
+hr{
+    margin-top: 5px;
+    background-color: #808080;
+}
+
+footer{
+    margin-top: 20px;
+    background-color: #353535;
+    color: #fff;
+}
+
+footer img{
+    margin: 30px 0 10px 0;
+    width: 130px;
+}
+
+footer span{
+    color: red;
+}
+
+footer .textofooter{
+    margin-bottom: 60px;
+}
+
+footer h2{
+    margin: 40px 0 0 0;
+}
+
+footer .menuFooter a{
+    color: #dadada;
+    font-weight: bold;
+    font-size: 1.1em; 
+}
+
+
+footer a{
+    color: #dadada;
+    font-size: 1.1em;
+}
+
+
+footer .menuFooter{
+    display: block; 
+    margin: 5px 0;
+}
+
+footer .redesFooter{
+    display: inline-block;
+    margin: 0 8px;
+    font-size: 25px;
+}
+
+footer a:hover{
+    text-decoration: none;
+    color: #fff;
+}
