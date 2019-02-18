@@ -25,29 +25,38 @@
 
           <li></li>
 
-          <li><a href="#"><span class=""><i class="fas fa-home"></i></span>Inicio</a></li>
-          <li><a href="#"><span class=""><i class="fas fa-shopping-cart"></i></span>Catálogos</a></li>
+          <li><a href="index.html"><span class=""><i class="fas fa-home"></i></span>Inicio</a></li>
+          <li><a href="contactos.html"><span class=""><i class="fas fa-shopping-cart"></i></span>Catálogos</a></li>
           <li><a href="desafios.html"><span class=""><i class="fas fa-flag-checkered"></i></span>Desafíos</a></li>
-          <li><a href="#"><span class=""><i class="far fa-comments"></i></span>Contactanos</a></li>
-          <li class=""><a href="#"><span class=""><i class="fas fa-trophy"></i></span>eSports</a></li>
+          <li><a href="contactos.html"><span class=""><i class="far fa-comments"></i></span>Contactanos</a></li>
 
         </ul>
       </nav>
     </header><br>
     <!-- barra de navegacion -->
 
-    <form>
-        <label for="nombre">Nombre: </label>
-        <input id="nombre" type="text">
+    <div class="container text-center">
+      <h1 class="mb-4">Contáctanos</h1>
+      <h4 class="mb-4">Si tienes cualquier duda o necesitas ayuda, no dudes en contactarnos.</h4>
+    </div>
 
-        <label for="email">Email:</label>
-        <input id="email" type="email">
+    <div class="cajaFormulario posicionamientoCentro">
+      <form>
+          <label for="nombre">Nombre: </label><br>
+          <input id="nombre" type="text" autofocus required><br>
+          <!-- autofocus: al recargar la página haga foco a ese imput para empezar a rellenar 
+               required: hace que ese campo sea obligatorio para enviar el formulario
+          -->
 
-        <label for="descripcion">Descripción</label>
-        <textarea name="descripcion" id="descripcion" cols="60" rows="5"></textarea>
+          <label for="email">Email:</label><br>
+          <input id="email" type="email" required><br>
 
-        <input type="submit" value="Enviar">
-    </form>
+          <label for="descripcion">Descripción:</label><br>
+          <textarea name="descripcion" id="descripcion" cols="60" rows="5" required></textarea><br>
+
+          <input class="btn btn-primary" type="submit" value="Enviar">
+      </form>
+    </div>
 
     <footer>
             <div class="row d-flex justify-content-around">

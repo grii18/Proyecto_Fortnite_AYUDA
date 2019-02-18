@@ -1,3 +1,4 @@
+
 .carrusel{
     height: 600px;
 }
@@ -101,7 +102,6 @@ li{
     -webkit-box-sizing: border-box;
     -moz-box-sizing:border-box;
     box-sizing: border-box;
-    
 }
 
 .sinEspacio{
@@ -155,7 +155,6 @@ div.cajaLogo{
     display: block;
     padding: 15px 20px;
     color: #ffffff;
-    font-family: 'Open sans';
     text-decoration: none;
     text-align: center;
     font-weight: bold;
@@ -258,4 +257,134 @@ footer .redesFooter{
 footer a:hover{
     text-decoration: none;
     color: #fff;
+}
+/* Desafios */
+section{
+  text-align : justify;
+  margin: 5% 8% 3% 8%;
+}
+section img{
+    width: 55%;
+    margin: 2% 5% 2% 20%;
+}
+/*----------------Sheyla Catalogo -------------------*/
+
+.containerCatalogo{
+    position: relative;
+    top: 20px;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    background: none;
+}
+
+.containerCatalogo .list-image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.containerCatalogo .list-image li{
+    margin-right: 60px;
+    margin-bottom: 20px; /*los espacio entre las img*/
+    list-style: none;  /* quita los puntos que traen las imágenes por defecto */
+}
+
+.containerCatalogo .list-image li .container__image{    /* ver más */
+    position: relative;
+    width: 300px;
+    height: 190px;
+    background: white;
+    border-radius: 3px;
+    
+
+}
+
+.containerCatalogo .list-image li .container__image img{
+    position: relative;
+    width: 300px;
+    height: 150px;   
+    border-top-left-radius: 3px;/*el redondeo de las esquinas de las img*/
+    border-top-right-radius: 3px;
+}
+
+.containerCatalogo .list-image li .container__image .information__image{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: white;
+    display: flex;
+    align-items: center;
+}
+
+.containerCatalogo .list-image li .container__image .information__image .name__image{
+    font-family: "Arial";
+    font-size: 16px;
+    margin-left: 8px;
+}
+    
+.containerCatalogo .list-image li .container__image .information__image .view__moreinfo {
+    position: absolute;
+    right: 5px;
+    display: block;
+    padding: auto;
+    height: 20px;
+    width: auto;
+    text-decoration: none;
+    color: #BEC0C4;
+    font-family: "Arial";
+    font-size: 14px;
+    border-radius: 90px;
+    border: 2px solid #BEC0C4;
+}
+
+/* Desafíos */
+
+.enlaceDerecha{
+    text-align: right;
+}
+
+.tituloDesafios{
+    text-align: center;
+    margin: 50px;
+    font-size: 2.8em;
+}
+
+.imgCentralDesafio{
+    width: 1000px;
+}
+
+.imgDesafios{
+    width: 500px;
+}
+
+.cajaDesafio{
+    margin: 80px 0;
+}
+
+.contenedorDesafios{
+    display: inline-block;
+}
+
+.posicionamientoCentro{/*Esto se encarga de centrar los objetos dentro de los contenedores*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* contáctanos */
+
+.cajaFormulario input, .cajaFormulario textarea{
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 4px;
+}
+
+.cajaFormulario label{
+    margin: 13px 0;
+}
+
+.cajaFormulario .btn{
+    margin: 20px 0;
 }
